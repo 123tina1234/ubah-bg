@@ -3,48 +3,247 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Universiti</title>
+    <title>Online Shopee</title>
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+    .thin {
+      font-weight: 100; /* Sangat tipis */
+    }
+    .light {
+      font-weight: 300; /* Tipis */
+    }
+    .normal {
+      font-weight: 400; /* Normal (default) */
+    }
+    .medium {
+      font-weight: 500; /* Sedikit lebih tebal */
+    }
+    .bold {
+      font-weight: 700; /* Tebal */
+    }
+    .black {
+      font-weight: 900; /* Sangat tebal */
+    }
+  </style>
+
+  <!-- feather icens -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- My Style -->
+
+  <link rel="stylesheet" href="css/style.css" />
   <body>
-    <div class="container">
-      <nav>
-        <a onclick="reRender()" id="home">HOME</a>
-        <a onclick="darkMode()" id="mode">MODE</a>
-      </nav>
-      <h1>sesi 6 cuy Universiti</h1>
-      <p class="info" id="info"></p>
-    </div>
-    <!-- initializing function script -->
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="Navbar-logo">Online<span>Shopee</span>,</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-manu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Selamat Berbelanja & <span> Happy enjoyyy </span></h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,
+          commodi.
+        </p>
+        <a href="#" class="cta">Beli sekarang</a>
+      </main>
+    </section>
+
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img
+            src="img/pexels-cup-of-couple-6956917.jpg"
+            style="border-radius: 15px"
+            alt="Tentang Kami"
+          />
+        </div>
+        <div class="content">
+          <h3>Kenapa Memilih Toko Kami?</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit sit
+            nesciunt ipsum. Quis, provident ea.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            recusandae rem quasi ipsam nesciunt sunt quod, inventore similique
+            voluptatibus sed.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Menu Section start -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+        veritatis sequi voluptatum.
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="menu/1.jpeg"
+            style="width: 250px; height: 200px"
+            alt="Baju Distro"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Baju Distro -</h3>
+          <p class="menu-card-price">IDR 55K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="menu/1.jpeg"
+            style="width: 250px; height: 200px"
+            alt="Baju Distro"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Baju Distro -</h3>
+          <p class="menu-card-price">IDR 55K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="menu/1.jpeg"
+            style="width: 250px; height: 200px"
+            alt="Baju Distro"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Baju Distro -</h3>
+          <p class="menu-card-price">IDR 55K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="menu/1.jpeg"
+            style="width: 250px; height: 200px"
+            alt="Baju Distro"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Baju Distro -</h3>
+          <p class="menu-card-price">IDR 55K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="menu/1.jpeg"
+            style="width: 250px; height: 200px"
+            alt="Baju Distro"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Baju Distro -</h3>
+          <p class="menu-card-price">IDR 55K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="menu/1.jpeg"
+            style="width: 250px; height: 200px"
+            alt="Baju Distro"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Baju Distro -</h3>
+          <p class="menu-card-price">IDR 55K</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section end -->
+
+    <!-- Contack Section start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, odio?
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255318.51736349374!2d130.9674368867188!3d-0.8761628999999916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d5eab187d28a991%3A0xd6d7200aaaf922c6!2skota%20sorong%20papua%20barat%20daya!5e0!3m2!1sid!2sid!4v1734877339876!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contack Section end -->
+
+<!-- footer start -->
+ <footer>
+  <div class="socials">
+    <a href="#"><i data-feather="instagram"></i>
+    <a href="#"><i data-feather="twitter"></i>
+    <a href="#"><i data-feather="facebook"></i>
+    </a>
+  </div>
+  <div class="links">
+    <a href="#home">Hemo</a>
+    <a href="#about">Tentang Kami</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Kontak
+
+    </a>
+  </div>
+<div class="credit">
+  <p>Created by <a href="">Floren</a>. | & fashen; 2024</p>
+</div>
+
+
+ </footer>
+<!-- footer end -->
+
+
+
+    <!-- feather icone -->
     <script>
-      let body = document.body;
-      let info = document.getElementById("info");
-      let mode = document.getElementById("mode");
-      let home = document.getElementById("home");
-
-      const darkLimit = 5;
-      let darkCounter = 0;
-      let darkRemainingleft = 5;
-
-      function darkMode() {
-        if (darkRemainingleft === 1) {
-          info.textContent = "💥JATAH FITUR DARKMODE ANDA SUDAH HABIS💥";
-          mode.style.display = "none";
-          home.textContent = "RESTART";
-          return;
-        }
-        darkCounter += 1;
-        darkRemainingleft = darkLimit - darkCounter;
-
-        // render ke info element
-        info.textContent = `Darkmode dipakai ${darkCounter}x tersisa ${darkRemainingleft}`;
-
-        body.classList.toggle("dark");
-      }
-
-      function reRender() {
-        location.reload();
-      }
+      feather.replace();
     </script>
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
   </body>
 </html>
